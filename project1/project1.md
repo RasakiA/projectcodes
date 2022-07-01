@@ -5,7 +5,7 @@
 
 
 ### Step 2
-- install apache using ubuntu package manager 'apt':
+<p>Install apache using ubuntu package manager 'apt':</p>
 
 <!-- Code Blocks -->
 
@@ -15,6 +15,13 @@
   
   #Run apache2 package installation
   sudo apt install apache2
-  
 ```
+
+<p>To verify that apache2 is running as a Service in our OS, use following command</p>
+
+```bash
+  #check the status of the apache2 server on the node
+  sudo systemctl status apache2  
+```
+<p>If it is green and running, then you did everything correctly – you have just launched your first Web Server in the Clouds!</p>
 
