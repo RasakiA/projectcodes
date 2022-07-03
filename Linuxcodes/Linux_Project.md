@@ -96,3 +96,38 @@ ls -lrt
 
 &nbsp;
 
+#### Step 7: Make sure the permissions of the devops-team folder allow group members to create and delete files  
+
+```bash 
+chmod g+w /home/devops-team/
+
+ls -lrt
+
+OR 
+
+ls -l
+```
+<!-- Images -->
+
+![.](image/img_8.png)
+
+&nbsp;
+
+#### Step 8: Ensure others don't have any access to the files in the devops-team folder   
+
+```bash 
+chmod o-rx /home/devops-team/
+
+ls -lrt
+
+OR 
+
+ls -l
+```
+<!-- Images -->
+
+![.](image/img_9.png)
+
+&nbsp;
+
+
