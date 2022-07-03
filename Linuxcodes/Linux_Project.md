@@ -24,7 +24,7 @@ sudo su
 ```
 <!-- Images -->
 
-![.](images/img_1.png)
+![.](image/img_1.png)
 
 &nbsp;
 
