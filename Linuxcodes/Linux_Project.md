@@ -28,4 +28,29 @@ sudo su
 
 &nbsp;
 
-Step 2: 
+#### Step 2: Create a group devops-team 
+
+```bash 
+groupadd devops-team 
+cat /etc/group | grep devops-team
+```
+<!-- Images -->
+
+![.](image/img_2.png)
+
+&nbsp;
+
+#### Step 3: Create two users Jonas and Basmat and add them to the devops-team group
+
+```bash 
+useradd -G devops-team Jonas
+useradd -G devops-team Basmat
+cat /etc/group | grep devops-team
+```
+<!-- Images -->
+
+![.](image/img_3.png)
+
+&nbsp;
+
+
