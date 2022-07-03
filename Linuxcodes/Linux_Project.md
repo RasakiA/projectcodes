@@ -7,9 +7,25 @@
 #### Create another group project-manager and add a user Fatima to it. Verify if the folder /home/devops-team is accessible by Fatima.
 
 ___
+<p> Note: For clarity of implementation, try to visualise the request and execute according </p>
 
+&nbsp;
 
 ## Linux Permissions Solutions with Screen Shots
 
-#### Step 1: Switch to root using the code below
+#### Step 1: Switch to root user using the code below in your linux terminal
 
+```bash
+sudo -i
+
+OR
+
+sudo su
+```
+<!-- Images -->
+
+![.](images/img_1.png)
+
+&nbsp;
+
+Step 2: 
