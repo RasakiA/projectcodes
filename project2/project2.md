@@ -10,9 +10,15 @@
 - As we know, we have TCP port 22 open by default on our EC2 machine to access it via SSH, so we need to add a rule to EC2 configuration to open inbound connection through port 80:
 
 ```bash
+#update a list of packages in package manager
 sudo apt update
+
+#run nginx pakage installation
 sudo apt install nginx
+
+#check the status of the nginx web server if running appropriately
 sudo systemctl status ngix
+
 ```
 
 <!-- Images -->
@@ -25,7 +31,16 @@ sudo systemctl status ngix
 
 ![.](images/img_4.png)
 
+![.](images/img_5.png)
 
 #### Step 3: 
 - Install mysql server 
-- 
+
+
+```bash
+#install mysql server
+sudo apt install msql-server
+
+#
+
+```
