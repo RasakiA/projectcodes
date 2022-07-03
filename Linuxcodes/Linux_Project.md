@@ -223,3 +223,7 @@ passwd Kate
 ![.](image/img_17.png)
 &nbsp;
 
+## How do you give the Kate in the project-manager group access to the devops-team folder?
+
+
+#### Suggestion: chmod -rwx directoryname to remove permissions & chmod +rwx directoryname to add permissions.
