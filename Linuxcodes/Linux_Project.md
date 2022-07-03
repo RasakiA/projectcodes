@@ -53,4 +53,46 @@ cat /etc/group | grep devops-team
 
 &nbsp;
 
+#### Step 4: Password the two users Jonas and Basmat 
+
+```bash 
+passwd Jonas
+passwd Basmat
+```
+<!-- Images -->
+
+![.](image/img_4.png)
+
+&nbsp;
+
+#### Step 5: Create directory in /home and name it devops-team
+
+```bash 
+
+
+```
+<!-- Images -->
+
+![.](image/img_5.png)
+
+![.](image/img_6.png)
+
+&nbsp;
+
+#### Step 6: Change the group ownershot of the folder devops-team to devops-team  
+
+```bash 
+chown :devops-team /home/devops-team/
+
+ls -l
+
+OR 
+
+ls -lrt
+```
+<!-- Images -->
+
+![.](image/img_7.png)
+
+&nbsp;
 
