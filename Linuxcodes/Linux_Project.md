@@ -174,8 +174,10 @@ ls -lrt
 
 #### Step 10: 
 - Exit the shell user and switch to Basmat
+- Navigate to the path /home/devops-team/
 - Find out Basmat privileges to access the jonas-file.txt
-- 
+- Modify the file jonas-file.txt while logged in as Basmat
+- Verify the the info added into jonas-file.txt was entered correctly
 
 ```bash 
 exit 
@@ -200,4 +202,24 @@ cat jonas-file.txt
 
 &nbsp;
 
+#### Step 11: 
+- Create another group project-manager and assign user Kate to it
+- Navigate to the folder /home/devops-team/ and verify if Kate can access it 
+- We get an error when trying to access it
+- This is because others does not have any access to the folder devops-team
+
+
+```bash 
+groupadd project-manager
+useradd -G project-manager Kate
+passwd Kate
+```
+<!-- Images -->
+
+![.](image/img_16.png)
+
+- If we recall, the others do not have access to the devops-team folder. See image of right below:
+
+![.](image/img_17.png)
+&nbsp;
 
