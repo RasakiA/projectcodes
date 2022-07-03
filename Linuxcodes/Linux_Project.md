@@ -131,3 +131,73 @@ ls -l
 &nbsp;
 
 
+#### Step 9: 
+- Exit the root session and switch to Jonas   
+- Navigate to the folder /home/devops-team/
+- Create an empty file in the folder called jonas-file.txt
+- Change the group ownership of the file to the group devops-team
+- verify the information is as requested
+
+```bash 
+exit 
+
+su Jonas 
+
+whoami
+
+cd /home/devops-team/
+
+touch jonas-file.txt
+
+ls -lrt
+
+OR 
+
+ls -l
+
+chown :devops-team jonas-file.txt
+
+ls -lrt
+
+```
+<!-- Images -->
+
+
+![.](image/img_10.png)
+
+![.](image/img_11.png)
+
+![.](image/img_12.png)
+
+&nbsp;
+
+
+#### Step 10: 
+- Exit the shell user and switch to Basmat
+- Find out Basmat privileges to access the jonas-file.txt
+- 
+
+```bash 
+exit 
+
+su Basmat
+
+whoami
+
+ls -l | grep jonas-file.txt
+
+echo "This is Basmat's comment" > jonas-file.txt
+
+cat jonas-file.txt
+```
+<!-- Images -->
+
+![.](image/img_13.png)
+
+![.](image/img_14.png)
+
+![.](image/img_15.png)
+
+&nbsp;
+
+
