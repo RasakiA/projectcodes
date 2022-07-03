@@ -33,6 +33,10 @@ sudo systemctl status ngix
 
 ![.](images/img_5.png)
 
+![.](images/OpenPort80.gif)
+
+&nbsp;
+
 #### Step 3: 
 - Install mysql server 
 
