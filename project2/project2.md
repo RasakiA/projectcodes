@@ -33,18 +33,30 @@ sudo systemctl status ngix
 
 ![.](images/img_5.png)
 
+- Process for opening port 80
+
 ![.](images/OpenPort80.gif)
 
-&nbsp;
+- NGINX web server accessible 
+![.](images/img_6.png)
 
-#### Step 3: 
+#### Step 3: INSTALLING MYSQL
 - Install mysql server 
+- When prompted press Y and then enter 
+- When installation is complete, log into mysql 
 
 
 ```bash
-#install mysql server
+#use apt to acquire and install mysql server
 sudo apt install msql-server
 
-#
+#log into mysql 
+sudo mysql
+
+#It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+
+#Exit mysql shell with 
+exit 
 
 ```
