@@ -61,12 +61,24 @@ exit
 
 ```
 
+![.](images/img_7.png)
+
+![.](images/img_8.pmg)
+
+&nbsp;
+
 - Start the interactive script by running 
 
 ```bash 
 sudo mysql_secure_installation
 
 ```
+
+![.](images/img_9.png)
+
+![.](images/img_10.png)
+
+&nbsp;
 
 <p>This will ask if you want to configure the VALIDATE PASSWORD PLUGIN.
 
@@ -81,6 +93,9 @@ sudo mysql -p
 
 exit
 ```
+
+![.](images/img_11.png)
+&nbsp;
 
 #### Step 4: INSTALLING PHP
 - Install two packages at once with a single line of code
@@ -102,6 +117,7 @@ sudo apt install pho-fpm php-mysql
 sudo mkdir /var/www/projectLEMP
 
 ```
+![.](images/img_12.png)
 
 - Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:
 ```bash 
@@ -114,6 +130,10 @@ sudo chown -R $USER:$USER /var/www/projectLEMP
 #
 sudo nano /etc/nginx/sites-available/projectLEMP
 ```
+
+![.](images/img_13.png)
+
+&nbsp;
 
 - This will create a new blank file. Paste in the following bare-bones configuration:
 ```bash 
@@ -172,7 +192,7 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-![.](images/img_xpng)
+![.](images/img_14.png)
 
 - If any errors are reported, go back to your configuration file to review its contents before continuing.
 - We also need to disable default Nginx host that is currently configured to listen on port 80, for this run:
@@ -193,6 +213,8 @@ sudo systemctl reload nginx
 #
 sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
 ```
+
+![.](images/img_15.png)
 
 - Now go to your browser and try to open your website URL using IP address:
 ```bash 
@@ -236,13 +258,17 @@ http://`server_domain_or_IP`/info.php
 
 - You will see a web page containing detailed information about your server:
 
-![.](images/img_16)
+![.](images/img_16.png)
+
+
 
 <p>After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment and your Ubuntu server. You can use rm to remove that file:</p>
 
 ```bash 
 sudo rm /var/www/your_domain/info.php
 ```
+
+![.](images/img_17.png)
 
 ##### You can always regenerate this file if you need it later.
 
@@ -261,11 +287,15 @@ We will create a database named example_database and a user named example_user, 
 sudo mysql
 ```
 
+![.](images/img_18.png)
+
 - To create a new database, run the following command from your MySQL console:
-```
+```bash
 #
 CREATE DATABASE `example_database`;
 ```
+
+![.](images/img_19.png)
 
 Now you can create a new user and grant him full privileges on the database you have just created.
 
@@ -297,6 +327,8 @@ You can test if the new user has the proper permissions by logging in to the MyS
 -u example_user -p
 ```
 
+![.](images/img_20.png)
+
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
 ```bash 
 #
@@ -305,7 +337,7 @@ SHOW DATABASES;
 
 This will give you the following output:
 
-![.](images/img_.png)
+![.](images/img_21.png)
 
 - Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 ```bash 
@@ -328,12 +360,15 @@ CREATE TABLE example_database.todo_list (
  
  INSERT INTO example_database.todo_list (content) VALUES ("and this is one more thing");
  ```
- 
+
  - To confirm that the data was successfully saved to your table, run:
  ```bash
  #
  SELECT * FROM example_database.todo_list;
  ```
+ ![.](images/img_22.png)
+ 
+ &nbsp;
  
  - After confirming that you have valid data in your test table, you can exit the MySQL console:
  ```bash 
@@ -381,7 +416,7 @@ http://<Public_domain_or_IP>/todo_list.php
 
 #### You should see a page like this, showing the content you’ve inserted in your test table:
 
-![.](images/img_.png)
+![.](images/img_23.png)
 
 <p> That means your PHP environment is ready to connect and interact with your MySQL server.</p>
  
