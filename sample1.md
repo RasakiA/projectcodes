@@ -64,6 +64,7 @@ ___
 2. Item 2
 3. Item 3
 
+&nbsp;
 
 <!-- Inline Code Block -->
 <p>This is a paragraph </p>
