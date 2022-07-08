@@ -94,7 +94,7 @@ npm init
 
 <!-- Images -->
 
-![.](images/img_.png)
+![.](images/img_8.png)
 
 &nbsp;
 
