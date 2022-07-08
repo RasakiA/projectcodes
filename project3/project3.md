@@ -92,8 +92,13 @@ Next, you will use the command npm init to initialise your project, so that a ne
 npm init
 `````
 
+<!-- Images -->
+
+![.](images/img_.png)
+
 &nbsp;
 
 - Run the command ls to confirm that you have package.json file created.
+
 
 
