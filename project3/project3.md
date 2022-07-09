@@ -26,6 +26,7 @@ Update ubuntu
 `````bash 
 sudo apt update 
 `````
+
 &nbsp;
 
 Upgrade Ubuntu
@@ -33,6 +34,8 @@ Upgrade Ubuntu
 `````bash 
 sudo apt upgrade
 `````
+![.](images/img_1.png)
+![.](images/img_2.png)
 &nbsp;
 
 Lets get the location of Node.js software from Ubuntu repositories.
@@ -40,6 +43,7 @@ Lets get the location of Node.js software from Ubuntu repositories.
 `````bash 
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 `````
+![.](images/img_3.png)
 &nbsp;
 
 Install Node.js on the server
@@ -47,7 +51,7 @@ Install Node.js with the command below
 `````bash
 sudo apt-get install -y nodejs
 `````
-
+![.](images/img_4.png)
 &nbsp;
 
 <p>Note: The command above installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.</p>
@@ -63,7 +67,7 @@ Verify the node installation with the command below
 `````bash 
 npm -v 
 `````
-
+![.](images/img_5.png)
 &nbsp;
 
 Application Code Setup
@@ -78,6 +82,7 @@ Run the command below to verify that the Todo directory is created with ls comma
 `````bash
 ls
 `````
+![.](images/img_6.png)
 &nbsp;
 
 Now change your current directory to the newly created one:
@@ -94,11 +99,11 @@ npm init
 
 <!-- Images -->
 
-![.](images/img_8.png)
+![.](images/img_7.png)
 
 &nbsp;
 
 - Run the command ls to confirm that you have package.json file created.
 
-
+![.](images/img_10.png)
 
